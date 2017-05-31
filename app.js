@@ -20,7 +20,7 @@ app.configure(function () {
     app.set('strict routing', true);
     app.set("lisk address", "http://" + config.lisk.host + ":" + config.lisk.port);
 
-    if (config.lisk.port == 8000) {
+    if (config.lisk.port == 4001) {
         app.set("lisk network", 'mainnet');
     } else {
         app.set("lisk network", 'testnet');
